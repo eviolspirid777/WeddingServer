@@ -15,7 +15,10 @@ namespace WeddingServer.Services.TelegramService
     }
     public class TelegramService : IHostedService
     {
-        private static string id = "481227813";
+        private static readonly string[] ids = [
+            "481227813", //Me
+            "165697420" //Natasha
+        ];
 
         private static TelegramBotClient _botClient = new("8118291036:AAE6IoXjVVDxNgf6To5ImrapAL2HG7EYuf0");
         private readonly IDbContextFactory<PostgreDBContext> _dbContextFactory;
@@ -53,7 +56,10 @@ namespace WeddingServer.Services.TelegramService
 
         public async Task SendFormMessage(string msg)
         {
-            await _botClient.SendMessage(id, msg);
+            foreach (var id in ids)
+            {
+                await _botClient.SendMessage(id, msg);
+            }
         }
     }
 }

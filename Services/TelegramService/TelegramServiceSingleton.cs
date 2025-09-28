@@ -10,20 +10,20 @@ namespace WeddingServer.Services.TelegramService
 {
     public class TelegramServiceSingleton
     {
-        private static string id = String.Empty;
+        private static readonly string[] ids = [
+            "481227813", //Me
+            "165697420" //Natasha
+        ];
 
         private static TelegramBotClient _botClient = new("8118291036:AAE6IoXjVVDxNgf6To5ImrapAL2HG7EYuf0");
-        private static PostgreDBContext _dbContext;
-        public TelegramServiceSingleton(PostgreDBContext dbContext)
-        {
-            id = "481227813";
-            _dbContext = dbContext;
-        }
 
         public async Task SendFormMessage(WeddingForm data)
         {
             string msg = $"Новая заявка!\n\n{data}";
-            await _botClient.SendMessage(id, msg);
+            foreach (string id in ids)
+            {
+                await _botClient.SendMessage(id, msg);
+            }
         }
     }
 }
