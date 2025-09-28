@@ -16,7 +16,6 @@ COPY ["WeddingServer.csproj", "."]
 # Настройка NuGet для работы с проблемами сети
 RUN dotnet nuget config --set http_proxy= --set https_proxy=
 RUN dotnet nuget config --set globalPackagesFolder=/tmp/nuget-packages
-RUN dotnet nuget add source https://api.nuget.org/v3/index.json --name nuget.org --configfile /src/NuGet.Config
 
 # Восстановление пакетов с повторными попытками
 RUN for i in 1 2 3; do \
