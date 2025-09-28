@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using WeddingServer.DbContext;
 using WeddingServer.Services.TelegramService;
+//AUTHORIZE ON SERVER
+//login: root
+//pass: jzgQWZF62ZmCT446
 
 var builder = WebApplication.CreateBuilder(args);
 
