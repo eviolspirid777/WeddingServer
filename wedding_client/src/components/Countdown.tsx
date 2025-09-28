@@ -2,7 +2,7 @@ import { Heart, Timer } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export const Countdown = () => {
-  const weddingDate = new Date(2025, 11, 8, 14, 0, 0); // 8 ноября 2025, 14:00
+  const weddingDate = new Date(2025, 10, 8, 14, 0, 0); // 8 ноября 2025, 14:00
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
