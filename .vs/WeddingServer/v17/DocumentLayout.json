@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|f:\\projects\\wedding\\wedding_server\\weddingserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|f:\\projects\\wedding\\wedding_server\\weddingserver\\controllers\\weddingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|solutionrelative:controllers\\weddingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|f:\\projects\\wedding\\wedding_server\\weddingserver\\models\\requests\\weddingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|solutionrelative:models\\requests\\weddingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|f:\\projects\\wedding\\wedding_server\\weddingserver\\models\\database\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|solutionrelative:models\\database\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|f:\\projects\\wedding\\wedding_server\\weddingserver\\services\\telegramservice\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|solutionrelative:services\\telegramservice\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|f:\\projects\\wedding\\wedding_server\\weddingserver\\dbcontext\\postgredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|solutionrelative:dbcontext\\postgredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|f:\\projects\\wedding\\wedding_server\\weddingserver\\services\\telegramservice\\telegramservicesingleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|solutionrelative:services\\telegramservice\\telegramservicesingleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|f:\\projects\\wedding\\wedding_server\\weddingserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|f:\\projects\\wedding\\wedding_server\\weddingserver\\models\\requests\\weddingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|solutionrelative:models\\requests\\weddingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|f:\\projects\\wedding\\wedding_server\\weddingserver\\dbcontext\\postgredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|solutionrelative:dbcontext\\postgredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|f:\\projects\\wedding\\wedding_server\\weddingserver\\models\\database\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE28E5DD-587C-4A26-BA70-DDB4FCD407FB}|WeddingServer.csproj|solutionrelative:models\\database\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,24 +38,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "TelegramServiceSingleton.cs",
+              "DocumentMoniker": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Services\\TelegramService\\TelegramServiceSingleton.cs",
+              "RelativeDocumentMoniker": "Services\\TelegramService\\TelegramServiceSingleton.cs",
+              "ToolTip": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Services\\TelegramService\\TelegramServiceSingleton.cs",
+              "RelativeToolTip": "Services\\TelegramService\\TelegramServiceSingleton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T11:31:42.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Models\\Database\\User\\User.cs",
               "RelativeDocumentMoniker": "Models\\Database\\User\\User.cs",
               "ToolTip": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Models\\Database\\User\\User.cs",
               "RelativeToolTip": "Models\\Database\\User\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T14:31:36.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PostgreDBContext.cs",
               "DocumentMoniker": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\DbContext\\PostgreDBContext.cs",
               "RelativeDocumentMoniker": "DbContext\\PostgreDBContext.cs",
@@ -68,65 +81,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "WeddingForm.cs",
               "DocumentMoniker": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Models\\Requests\\WeddingForm.cs",
               "RelativeDocumentMoniker": "Models\\Requests\\WeddingForm.cs",
               "ToolTip": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Models\\Requests\\WeddingForm.cs",
               "RelativeToolTip": "Models\\Requests\\WeddingForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T14:15:01.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TelegramServiceSingleton.cs",
-              "DocumentMoniker": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Services\\TelegramService\\TelegramServiceSingleton.cs",
-              "RelativeDocumentMoniker": "Services\\TelegramService\\TelegramServiceSingleton.cs",
-              "ToolTip": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Services\\TelegramService\\TelegramServiceSingleton.cs",
-              "RelativeToolTip": "Services\\TelegramService\\TelegramServiceSingleton.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T14:00:10.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T12:43:10.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WeddingController.cs",
               "DocumentMoniker": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Controllers\\WeddingController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeddingController.cs",
               "ToolTip": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Controllers\\WeddingController.cs",
               "RelativeToolTip": "Controllers\\WeddingController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T12:37:56.37Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "TelegramService.cs",
               "DocumentMoniker": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Services\\TelegramService\\TelegramService.cs",
               "RelativeDocumentMoniker": "Services\\TelegramService\\TelegramService.cs",
               "ToolTip": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\Services\\TelegramService\\TelegramService.cs",
               "RelativeToolTip": "Services\\TelegramService\\TelegramService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAIAwwC8AAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwC4AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T12:37:33.872Z",
               "EditorCaption": ""
