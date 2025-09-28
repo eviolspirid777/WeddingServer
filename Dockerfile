@@ -15,8 +15,6 @@ WORKDIR /src
 COPY ["WeddingServer.csproj", "."]
 
 # Настройка NuGet для работы с проблемами сети
-RUN dotnet nuget config --set http_proxy= --set https_proxy=
-RUN dotnet restore "./WeddingServer.csproj" --verbosity normal
 COPY . .
 WORKDIR "/src/."
 RUN dotnet build "./WeddingServer.csproj" -c $BUILD_CONFIGURATION -o /app/build
