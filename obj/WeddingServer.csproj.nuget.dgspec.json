@@ -10,7 +10,7 @@
         "projectUniqueName": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\WeddingServer.csproj",
         "projectName": "WeddingServer",
         "projectPath": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\WeddingServer.csproj",
-        "packagesPath": "C:\\Users\\eviol\\.nuget\\packages\\",
+        "packagesPath": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\nuget-packages",
         "outputPath": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [

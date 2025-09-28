@@ -4,7 +4,8 @@ WORKDIR /src
 
 # Копирование только файла проекта
 COPY ["WeddingServer.csproj", "."]
-RUN dotnet restore "WeddingServer.csproj"
+COPY nuget-packages ./nuget-packages
+RUN dotnet restore "WeddingServer.csproj" --packages ./nuget-packages
 
 # Копирование остальных файлов
 COPY . .

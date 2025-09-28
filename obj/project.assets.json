@@ -3595,7 +3595,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eviol\\.nuget\\packages\\": {},
+    "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\nuget-packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -3604,7 +3604,7 @@
       "projectUniqueName": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\WeddingServer.csproj",
       "projectName": "WeddingServer",
       "projectPath": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\WeddingServer.csproj",
-      "packagesPath": "C:\\Users\\eviol\\.nuget\\packages\\",
+      "packagesPath": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\nuget-packages",
       "outputPath": "F:\\projects\\Wedding\\wedding_server\\WeddingServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
