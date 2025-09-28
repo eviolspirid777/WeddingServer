@@ -1,18 +1,21 @@
-﻿namespace WeddingServer.Models.Requests
+﻿using System.Text;
+
+namespace WeddingServer.Models.Requests
 {
     public class WeddingForm
     {
-        public string Name { get; set; }
-        public int NumberOfVisitors { get; set; }
-        public string Wishes { get; set; }
+        public string[] Names { get; set; }
+        public string? Wishes { get; set; }
 
         public override string ToString()
         {
-            return $"""
-                        Имя: {this.Name}
-                        Число гостей: {this.NumberOfVisitors}
-                        Пожелание: {this.Wishes}
-                    """;
+            var strBuilder = new StringBuilder();
+            foreach(var name in Names)
+            {
+                strBuilder.AppendLine($"Имя: {name}");
+            }
+            strBuilder.AppendLine($"Пожелание: {Wishes}");
+            return strBuilder.ToString();
         }
     }
 }

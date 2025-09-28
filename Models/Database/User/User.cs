@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text;
 
 namespace WeddingServer.Models.Database.User
 {
@@ -6,17 +7,18 @@ namespace WeddingServer.Models.Database.User
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Wishes { get; set; }
-        public int NumberOfVisitors { get; set; }
+        public string[] Names { get; set; }
+        public string? Wishes { get; set; }
 
         public override string ToString()
         {
-            return $"""
-                    Имя: {Name}
-                        Число гостей: {NumberOfVisitors}
-                        Пожелание: {Wishes}
-                    """;
+            var strBuilder = new StringBuilder();
+            foreach (var name in Names)
+            {
+                strBuilder.AppendLine($"Имя: {name}");
+            }
+            strBuilder.AppendLine($"Пожелание: {Wishes}");
+            return strBuilder.ToString();
         }
     }
 }

@@ -16,15 +16,14 @@ namespace WeddingServer.Controllers
         private readonly IDbContextFactory<PostgreDBContext> _dbContextFactory = dbContextFactory;
 
         [HttpPost("post-wedding-form")]
-        public async Task<IActionResult> SendTelegramForm([FromForm] WeddingForm data)
+        public async Task<IActionResult> SendTelegramForm([FromBody] WeddingForm data)
         {
             var ctx = await _dbContextFactory.CreateDbContextAsync();
             await _telegramServiceSingleton.SendFormMessage(data);
             await ctx
                     .Users
                     .AddAsync(new User {
-                        Name = data.Name,
-                        NumberOfVisitors = data.NumberOfVisitors,
+                        Names = data.Names,
                         Wishes = data.Wishes 
                     });
             await ctx.SaveChangesAsync();

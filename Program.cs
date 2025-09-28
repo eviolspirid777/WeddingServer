@@ -17,8 +17,20 @@ builder.Services.AddDbContextFactory<PostgreDBContext>(options =>
 builder.Services.AddHostedService<TelegramService>();
 builder.Services.AddScoped<TelegramServiceSingleton>();
 
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("AllowSpecificOrigin", policy =>
+    {
+        policy
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
 
 var app = builder.Build();
+
+app.UseCors("AllowSpecificOrigin");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
