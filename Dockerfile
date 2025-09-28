@@ -13,7 +13,11 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["WeddingServer.csproj", "."]
-RUN dotnet restore "./WeddingServer.csproj"
+
+# Настройка NuGet для работы с проблемами сети
+RUN dotnet nuget add source https://api.nuget.org/v3/index.json --name nuget.org
+RUN dotnet nuget config --set http_proxy= --set https_proxy=
+RUN dotnet restore "./WeddingServer.csproj" --verbosity normal
 COPY . .
 WORKDIR "/src/."
 RUN dotnet build "./WeddingServer.csproj" -c $BUILD_CONFIGURATION -o /app/build

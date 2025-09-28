@@ -1,0 +1,41 @@
+# Dockerfile для Ubuntu сервера с улучшенной обработкой сети
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+
+# Установка необходимых пакетов для работы с сетью
+RUN apt-get update && apt-get install -y \
+    ca-certificates \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Настройка рабочей директории
+WORKDIR /src
+
+# Копирование файла проекта
+COPY ["WeddingServer.csproj", "."]
+
+# Настройка NuGet для работы с проблемами сети
+RUN dotnet nuget config --set http_proxy= --set https_proxy=
+RUN dotnet nuget config --set globalPackagesFolder=/tmp/nuget-packages
+RUN dotnet nuget add source https://api.nuget.org/v3/index.json --name nuget.org --configfile /src/NuGet.Config
+
+# Восстановление пакетов с повторными попытками
+RUN for i in 1 2 3; do \
+        dotnet restore "./WeddingServer.csproj" --verbosity normal && break || \
+        (echo "Attempt $i failed, retrying..." && sleep 10); \
+    done
+
+# Копирование остальных файлов
+COPY . .
+
+# Сборка проекта
+RUN dotnet build "./WeddingServer.csproj" -c Release -o /app/build
+
+# Публикация проекта
+FROM build AS publish
+RUN dotnet publish "./WeddingServer.csproj" -c Release -o /app/publish /p:UseAppHost=false
+
+# Финальный образ
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "WeddingServer.dll"]
