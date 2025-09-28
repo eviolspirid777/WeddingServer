@@ -50,8 +50,7 @@
               "RelativeToolTip": "Services\\TelegramService\\TelegramServiceSingleton.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-28T11:31:42.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-28T11:31:42.128Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "Models\\Database\\User\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T14:31:36.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:31:36.154Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "DbContext\\PostgreDBContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T14:27:49.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:27:49.019Z"
             },
             {
               "$type": "Document",
@@ -89,8 +86,7 @@
               "RelativeToolTip": "Models\\Requests\\WeddingForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T14:15:01.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:15:01.306Z"
             },
             {
               "$type": "Document",
@@ -102,8 +98,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAuwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T12:43:10.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T12:43:10.401Z"
             },
             {
               "$type": "Document",
@@ -115,8 +110,7 @@
               "RelativeToolTip": "Controllers\\WeddingController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T12:37:56.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T12:37:56.37Z"
             },
             {
               "$type": "Document",
