@@ -1,20 +1,20 @@
-# Простой Dockerfile для ASP.NET Web API
+# Оптимизированный Dockerfile
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /app
+WORKDIR /src
 
-# Копирование файлов проекта
+# Копирование только файла проекта
+COPY ["WeddingServer.csproj", "."]
+RUN dotnet restore "WeddingServer.csproj"
+
+# Копирование остальных файлов
 COPY . .
+RUN dotnet build "WeddingServer.csproj" -c Release -o /app/build
 
-# Сборка и публикация
-RUN dotnet publish -c Release -o out
+FROM build AS publish
+RUN dotnet publish "WeddingServer.csproj" -c Release -o /app/publish
 
-# Финальный образ
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
-COPY --from=build /app/out .
-
-# Открытие порта
+COPY --from=publish /app/publish .
 EXPOSE 8080
-
-# Запуск приложения
 ENTRYPOINT ["dotnet", "WeddingServer.dll"]
