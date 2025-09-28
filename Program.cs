@@ -15,7 +15,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContextFactory<PostgreDBContext>(options =>
 {
-    options.UseNpgsql("Server=localhost;Database=wedding;Port=5432;UserId=postgres;Password=94monizi;");
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") 
+        ?? "Server=localhost;Database=wedding;Port=5432;UserId=postgres;Password=94monizi;";
+    options.UseNpgsql(connectionString);
 });
 builder.Services.AddHostedService<TelegramService>();
 builder.Services.AddScoped<TelegramServiceSingleton>();
@@ -42,7 +44,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// Отключаем HTTPS редирект в контейнере
+if (!app.Environment.IsEnvironment("Docker"))
+{
+    app.UseHttpsRedirection();
+}
 
 app.MapControllers();
 

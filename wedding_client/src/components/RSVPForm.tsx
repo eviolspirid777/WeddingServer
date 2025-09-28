@@ -43,7 +43,7 @@ export const RSVPForm = () => {
     // Здесь будет логика отправки формы
     console.log("Form submitted:", formData);
     console.log(import.meta.env);
-    const API_URL = import.meta.env.VITE_BASE_URL;
+    const API_URL = import.meta.env.VITE_BASE_URL || "http://localhost:5000";
     await axios.post(`${API_URL}/v1/api/Wedding/post-wedding-form`, formData);
     setIsSubmitted(true);
   };
